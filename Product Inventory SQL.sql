@@ -1,3 +1,13 @@
+/*
+Data Cleaning in SQL
+*/
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+/*
+View table and create duplicate table
+*/
+
 SELECT *
 FROM products;
 
@@ -11,13 +21,31 @@ FROM products;
 SELECT *
 FROM products1;
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+/*
+Check for duplicates
+The dataset had no duplicates
+*/
+
 SELECT `Product ID`
 FROM products1
 GROUP BY 1
 HAVING COUNT(*) > 1;
 
+-------------------------------------------------------------------------------------------------------------------------------
+/*
+Delete table with incorrect data
+*/
+
 ALTER TABLE products1
-DROP `Product Category`; #contains incorrect data
+DROP `Product Category`;
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+/*
+Check for blanks and null values
+*/
 
 SELECT *
 FROM products1
@@ -63,41 +91,17 @@ SELECT *
 FROM products1
 WHERE `Product Ratings` = '' OR NULL;
 
+--------------------------------------------------------------------------------------------------------------------------
+
+/*
+Standardize data
+*/
+
 ALTER TABLE products1
 MODIFY COLUMN `Manufacturing Date` date;
 
 ALTER TABLE products1
 MODIFY COLUMN `Expiration Date` date;
 
+-------------------------------------------------------------------------------------------------------------------------
 
-WITH CTElaptop AS (
-	SELECT `Product Name`, Price
-	FROM products1
-	WHERE `Product Name` = 'Laptop'
-    )
-SELECT SUM(Price)
-FROM CTElaptop;
-
-WITH CTEheadphones AS (
-    SELECT `Product Name`, Price
-    FROM products1
-    WHERE `Product Name` = 'Headphones'
-    )
-SELECT SUM(Price) Total_headphones_price
-FROM CTEheadphones;
-
-WITH CTEsmartphones AS (
-    SELECT `Product Name`, Price
-    FROM products1
-    WHERE `Product Name` = 'Smartphone'
-    )
-SELECT SUM(Price)
-FROM CTEsmartphones;
-
-WITH CTEmonitor AS (
-    SELECT `Product Name`, Price
-    FROM products1
-    WHERE `Product Name` = 'Monitor'
-    )
-SELECT SUM(Price)
-FROM CTEmonitor;
