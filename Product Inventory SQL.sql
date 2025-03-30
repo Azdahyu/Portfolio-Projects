@@ -1,5 +1,6 @@
 /*
 Data Cleaning in SQL
+This dataset is gotten from https://www.kaggle.com/datasets/keyushnisar/global-product-inventory-dataset-2025
 */
 
 -----------------------------------------------------------------------------------------------------------------------------
