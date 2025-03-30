@@ -105,7 +105,7 @@ WHERE Alcohol_Level = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Breathanalyzer_Result = '' OR NULL;
+WHERE Breathalyzer_Result = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
