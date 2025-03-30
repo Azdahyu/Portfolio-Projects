@@ -41,85 +41,84 @@ None of the following queries returned a null or blank value
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Violation_Type = '' OR Violation_Type IS NULL;
+WHERE Violation_Type = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Fine_Amount = '' OR Fine_Amount IS NULL;
+WHERE Fine_Amount = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Location = '' OR Location IS NULL;
+WHERE Location = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Vehicle_Type = '' OR Vehicle_Type IS NULL;
+WHERE Vehicle_Type = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Driver_Age = '' OR Driver_Age IS NULL;
+WHERE Driver_Age = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Driver_Gender = '' OR Driver_Gender IS NULL;
+WHERE Driver_Gender = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE License_Type = '' OR License_Type IS NULL;
+WHERE License_Type = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Penalty_Points = '' OR Penalty_Points IS NULL;
+WHERE Penalty_Points = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Weather_Condition = '' OR Weather_Condition IS NULL;
+WHERE Weather_Condition = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Road_Condition = '' OR Road_Condition IS NULL;
+WHERE Road_Condition = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Issuing_Agency = '' OR Issuing_Agency IS NULL;
+WHERE Issuing_Agency = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE License_Validity = '' OR License_Validity IS NULL;
+WHERE License_Validity = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Traffic_Light_Status = '' OR Traffic_Light_Status IS NULL;
+WHERE Traffic_Light_Status = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Speed_Limit = '' OR Speed_Limit IS NULL;
+WHERE Speed_Limit = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Recorded_Speed = '' OR Recorded_Speed IS NULL;
+WHERE Recorded_Speed = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Alcohol_Level = '' OR Alcohol_Level IS NULL;
+WHERE Alcohol_Level = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Breathanalyzer_Result = '' OR Breathanalyzer_Result IS NULL;
+WHERE Breathanalyzer_Result = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Court_Appearance_Required = '' OR Court_Appearance_Required IS NULL;
+WHERE Court_Appearance_Required = '' OR NULL;
 
 SELECT *
 FROM indian_traffic_violations1
-WHERE Previous_Violations = '' OR Previous_Violations IS NULL;
+WHERE Previous_Violations = '' OR NULL;
 
 ---------------------------------------------------------------------------------------------------------------------
 
 /*
 Return each column with the number of violations
-All these tables were exported for visualizations
 */
 
 SELECT Violation_Type, COUNT(Violation_Type) AS num_of_violations
