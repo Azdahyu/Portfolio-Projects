@@ -26,11 +26,11 @@ FROM indian_traffic_violations1;
 /*
 Check for duplicates 
 */
-SELECT COUNT(Violation_ID) AS count_ID
-FROM indian_traffic_violations1;
 
-SELECT COUNT(DISTINCT Violation_ID) AS distinct_ID
-FROM indian_traffic_violations1;
+SELECT Violation_ID
+FROM indian_traffic_violations1
+GROUP BY Violation_ID
+HAVING COUNT(*) > 1;
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -220,6 +220,17 @@ SELECT Violation_Type, MIN(Fine_Amount) min_fine, MAX(Fine_Amount) max_fine
 FROM indian_traffic_violations1
 GROUP BY 1
 ORDER  BY 2 DESC;
+
+-------------------------------------------------------------------------------------------------------------------
+
+/*
+Return the average fine amount for each violation type
+*/
+
+SELECT Violation_Type, AVG(Fine_Amount) avg_fine
+FROM indian_traffic_violations1
+GROUP BY 1
+ORDER BY 2 DESC;
 
 --------------------------------------------------------------------------------------------------------------------
 
