@@ -5,7 +5,7 @@ Exploratory Data Analysis (EDA) in MySQL
 -------------------------------------------------------------------------------------------------------------------
 
 /*
-View table and create a duplicate table
+View table and create a duplicate table 
 */
 
 SELECT *
@@ -36,6 +36,7 @@ HAVING COUNT(*) > 1;
 
 /*
 Check for blanks and null values
+None of the following queries returned a null or blank value
 */
 
 SELECT *
@@ -118,6 +119,7 @@ WHERE Previous_Violations = '' OR Previous_Violations IS NULL;
 
 /*
 Return each column with the number of violations
+All these tables were exported for visualizations
 */
 
 SELECT Violation_Type, COUNT(Violation_Type) AS num_of_violations
