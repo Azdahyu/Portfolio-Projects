@@ -241,4 +241,14 @@ Delete unused columns
 */
 
 ALTER TABLE indian_traffic_violations1
-DROP Date, Drop Time, Drop Vehicle_Color, DROP Vehicle_Model_Year, DROP Registration_State, DROP Officer_ID, DROP Number_of_Passengers, DROP Helmet_Worn, DROP Seatbelt_Worn, DROP Payment_Method, DROP Comments
+DROP Date,
+Drop Time, 
+Drop Vehicle_Color, 
+DROP Vehicle_Model_Year, 
+DROP Registration_State, 
+DROP Officer_ID,
+DROP Number_of_Passengers, 
+DROP Helmet_Worn, 
+DROP Seatbelt_Worn, 
+DROP Payment_Method, 
+DROP Comments
