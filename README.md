@@ -1,1 +1,1 @@
-This is a collection of my projects. 
+This is a simple Exploratory Data Analysis (EDA) of Indian traffic violations.
