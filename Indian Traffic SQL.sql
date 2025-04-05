@@ -252,7 +252,7 @@ ORDER  BY 2 DESC;
 
 --What was the average fine amount for each violation type?
 
-SELECT Violation_Type, AVG(Fine_Amount) avg_fine
+SELECT Violation_Type, ROUND(AVG(Fine_Amount), 2) avg_fine
 FROM indian_traffic_violations1
 GROUP BY 1
 ORDER BY 2 DESC;
