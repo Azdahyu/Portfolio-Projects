@@ -1,6 +1,5 @@
 /*
-Exploratory Data Analysis (EDA) in MySQL
-This dataset was gotten from https://www.kaggle.com/datasets/khushikyad001/indian-traffic-violation
+Exploratory Data Analysis (EDA) in MySQL Workbench
 */
 
 -------------------------------------------------------------------------------------------------------------------
