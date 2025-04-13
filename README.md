@@ -1,1 +1,1 @@
-This is a simple Exploratory Data Analysis (EDA) of Indian traffic violations.
+This repository is a collection of all my projects to showcase my skills and monitor my progress as a Data Analyst.
